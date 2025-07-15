@@ -25,7 +25,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
     }
 
     sub {
@@ -49,6 +48,8 @@
 
     h2 {
         font-size: 20px;
+        text-align: center;
+        margin: 1vw;
     }
 
     h3 {
@@ -58,7 +59,7 @@
     h4 {
         font-size: 16px;
     }
-    h1,h2,h3,h4 {
+    h1,h2,h3,h4,sub {
         color: #8B4000;
     }
     p {
@@ -67,7 +68,7 @@
 
     .sect1,
     .sect2 {
-        width: 48%;
+        width: 48vw;
         min-width: 300px;
     }
 
@@ -101,13 +102,14 @@
             <h2>Bebidas não Alcoólicas</h2>
             <h3>Água Garrafa R$<span id="precoagua" class="preco"></span></h3>
             <h3>Suco 400ml R$<span id="precosuco" class="preco"></span></h3>
-            <p>Abacate, Abacaxi, Acelora, Açaí, etc...</p>
-            <h3>Suco Lata 310ml R$<span class="preco">11,00</span></h3>
-            <p>Del Valle Uva, Pêssego, Laranja</p>
+            <p>Abacate, Abacaxi, Abacaxi com Hortelã, Acelora, Amora, Açaí, Caju, Cajá, Frutas Mix, Goiaba, Graviola,
+                Jaca, Kiwi, Laranja, Limonada Suiça, Limão, Manga, Maracujá, Melancia, Melão, Morango, Romã, Uva</p>
+            <h3>Suco Lata 310ml R$<span id="precorefri3" class="preco">11,00</span></h3>
+            <p>Del Valle: Uva, Pêssego, Manga</p>
             <h3>Refrigerante Lata 350ml R$<span class="preco" id="precorefri"></span></h3>
-            <p>Coca, Pepsi, Sprite, etc.</p>
+            <p>Coca, Coca 0, Guaraná, Guaraná 0, Pepsi, Pepsi Black, Pepsi Twist, Tonica, Tonica 0, Soda, Soda 0, Schweppes, Sprite, Sprite 0, Fanta Laranja, Fanta Uva, Fanta Maracujá. </p>
             <h3>H<sub>2</sub>O R$<span class="preco" id="precorefri1"></span></h3>
-            <p>Limão, Citrus, Pitaia</p>
+            <p>Limão, Limoneto, Citrus, Pitaia</p>
             <h3>Chá Leão R$<span class="preco" id="precorefri2"></span></h3>
             <p>Pêssego, Limão</p>
         </section>
@@ -121,29 +123,27 @@
             <h4>Long Neck R$<span class="preco">15,00</span></h4>
             <p>Heniken, Stella, Corona</p>
             <h4>Cerveja Lata R$<span class="preco">9,00</span></h4>
-            <p>Skol, Brahma</p>
+            <p>Skol, Brahma Duplo Malte</p>
             <h4>Cerveja 0 R$<span class="preco">15,00</span></h4>
             <p>Heniken 0, Estrella Galicia</p>
             <h3>Caipirinhas</h3>
-            <p>Limão, Maracujá, Morango...</p>
             <h4>Pinga R$<span class="preco">20,00</span></h4>
             <h4>Cachaça R$<span class="preco">23,00</span></h4>
-            <p>Salinas, Seleta, 51, etc.</p>
+            <p>Salinas, Seleta, Boazinha, Sagatiba, Luanova, São Francisco, do Mestre, Velho Barreiro, 51.</p>
             <h4>Vodka Smirnoff R$<span class="preco">23,00</span></h4>
             <h4>Saque Seco R$<span class="preco">23,00</span></h4>
         </section>
     </section>
-
     <h2>Sobremesas</h2>
     <section class="flex">
         <section class="sect1">
             <h3>Gelatina R$<span class="preco">2,00</span></h3>
             <h3>Doce de Abóbora R$<span class="preco">6,50</span></h3>
+            <h3>Cocada R$<span class="preco">8,00</span></h3>
+            <h3>Brigadeiro R$<span class="preco">8,00</span></h3>
+            <h3>Pão de Mel R$<span class="preco">8,00</span></h3>
             <h3>Gelatina Mosaico R$<span class="preco">9,00</span></h3>
             <h3>Manjar R$<span class="preco">9,00</span></h3>
-            <h3>Cocada R$<span class="preco">8,00</span></h3>
-        </section>
-        <section class="sect2">
             <h3>Mousse de Chocolate R$<span class="preco">11,00</span></h3>
             <h3>Mousse de Limão R$<span class="preco">9,00</span></h3>
             <h3>Pudim de Leite R$<span class="preco">10,00</span></h3>
@@ -162,6 +162,7 @@
             document.querySelector('#precorefri').innerHTML = '11,00';
             document.querySelector('#precorefri1').innerHTML = '11,00';
             document.querySelector('#precorefri2').innerHTML = '11,00';
+            document.querySelector('#precorefri3').innerHTML = '11,00';
         } else {
             console.log('dia de semana');
             document.querySelector('#precoagua').innerHTML = '5,00';
@@ -169,6 +170,7 @@
             document.querySelector('#precorefri').innerHTML = '9,00';
             document.querySelector('#precorefri1').innerHTML = '9,00';
             document.querySelector('#precorefri2').innerHTML = '9,00';
+            document.querySelector('#precorefri3').innerHTML = '9,00';
         }
     </script>
 </body>
