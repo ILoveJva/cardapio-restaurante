@@ -50,6 +50,7 @@
         font-size: 25px;
         text-align: center;
         margin: 1vw;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
     }
 
     h3 {
@@ -77,7 +78,7 @@
     }
 
     .preco {
-        text-decoration: underline;
+        text-decoration: none;
         color: #C1440E;
     }
     #sucos {
@@ -99,7 +100,7 @@
     <h1>Cardapio</h1>   
     <section class="flex">
         <section class="sect1">
-            <h2>Bebidas não Alcoólicas</h2>
+            <h2 id="bna">Bebidas não Alcoólicas</h2>
             <h3>Água Garrafa R$<span id="precoagua" class="preco"></span></h3>
             <h3>Água de Coco R$<span class="preco">12,00</span></h3>
             <div id="sucos"></div>
@@ -113,7 +114,7 @@
             <p>Pêssego, Limão</p>
         </section>
         <section class="sect2">
-            <h2>Bebidas Alcoólicas</h2>
+            <h2 id="ba">Bebidas Alcoólicas</h2>
             <h3>Cervejas 600ml</h3>
             <h4>Original R$<span class="preco">22,00</span></h4>
             <h4>Serra Malte R$<span class="preco">22,00</span></h4>
@@ -139,7 +140,7 @@
     </section>
     <section class="flex">
         <section class="sect1">
-            <h2>Sobremesas</h2>
+            <h2 id="sbm">Sobremesas</h2>
             <h3>Gelatina R$<span class="preco">2,00</span></h3>
             <h3>Doce de Abóbora R$<span class="preco">6,50</span></h3>
             <h3>Cocada R$<span class="preco">8,00</span></h3>
